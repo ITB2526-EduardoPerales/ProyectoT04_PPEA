@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<incidencies>
+    <incidencia id="1">
+        <Marca_de_temps>13/11/2025 8:45:39</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>javier.amaya@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11/2025</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>1</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>1</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>1</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="2">
+        <Marca_de_temps>13/11/2025 8:46:46</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>manriquesinchamba69@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/01/2030</Fecha_de_la_incidencia>
+        <Hora>23:59:00</Hora>
+        <Nombre_del_equipo>Si</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>No</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No tira esto</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="3">
+        <Marca_de_temps>13/11/2025 8:47:54</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>alex.sampietro.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11/2025</Fecha_de_la_incidencia>
+        <Hora>3:45:00</Hora>
+        <Nombre_del_equipo>G4</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No enciende el ordenador</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="4">
+        <Marca_de_temps>13/11/2025 8:48:45</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>javichu@itv.kat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>25/06/2030</Fecha_de_la_incidencia>
+        <Hora>23:34:00</Hora>
+        <Nombre_del_equipo>A</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Adiovisal</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Otro</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="5">
+        <Marca_de_temps>13/11/2025 8:50:19</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>brenda.castro.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/09/2025</Fecha_de_la_incidencia>
+        <Hora>10:10:00</Hora>
+        <Nombre_del_equipo>PC</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Va muy lento</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="6">
+        <Marca_de_temps>13/11/2025 8:51:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>javi.a@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>09/09/2025</Fecha_de_la_incidencia>
+        <Hora>10:09:00</Hora>
+        <Nombre_del_equipo>Torre</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>HA EXPLOTADO</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="7">
+        <Marca_de_temps>13/11/2025 8:52:00</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>a@a.aaa</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>a</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>a</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Informe tècnic d’incidència: El BITXO fantasma del servidor central
+            Introducció
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="8">
+        <Marca_de_temps>13/11/2025 8:53:08</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>a@a.aaa</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/01</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>1</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>기술 사고 보고서: 중앙 서버의 유령 BITXO 소개 지난 화요일 오전 7시 42분, IT 부서는 Datacore
+            BCN의 중앙 서버 데이터 관리 시스템에서 심각한 이상을 감지했습니다. 사용자들은 시스템 속도 저하, 간헐적인 오류, 그리고 화면에 이상한 메시지가 표시된다고 보고했습니다. 초기 진단 후,
+            기술자들은 단순한 소프트웨어 오류나 인적 오류가 아니라고 의심했습니다. 시스템 내에서 더욱 미묘하고, 지속적이며, 더욱... BITXO라는 무언가가 작동하고 있었던 것입니다. تقرير
+            الحوادث التقنية: BITXO الشبح في الخادم المركزي مقدمة في تمام الساعة 7:42 من صباح الثلاثاء الماضي، اكتشف قسم
+            تكنولوجيا المعلومات خللًا خطيرًا في نظام إدارة البيانات الخاص بالخادم المركزي لشركة Datacore BCN. أبلغ
+            المستخدمون عن بطء وأخطاء متقطعة ورسائل غريبة على الشاشات. بعد التشخيص الأولي، اشتبه الفنيون في أن المشكلة
+            ليست مجرد عطل برمجي أو خطأ بشري، بل شيء أكثر دقة وأكثر استمرارية، BITXO، كان يعمل داخل النظام.
+            技术事件报告：中央服务器的幽灵 BITXO 引言 上周二早上 7 点 42 分，IT 部门检测到 Datacore BCN
+            公司中央服务器的数据管理系统出现严重异常。用户反映系统运行缓慢、间歇性出现错误，屏幕上还出现了奇怪的信息。经过初步诊断，技术人员怀疑这并非简单的软件故障或人为错误。某种更隐蔽、更持久、更……像
+            BITXO 的东西正在系统内作祟
+        </En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>기술 사고 보고서: 중앙 서버의 유령 BITXO
+            소개
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="9">
+        <Marca_de_temps>13/11/2025 8:53:32</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>oriol.coll.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>22:12:00</Hora>
+        <Nombre_del_equipo>Ordenador 1</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No funciona el cable ethernet</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="10">
+        <Marca_de_temps>13/11/2025 8:54:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>joel.baena.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>3:33:00</Hora>
+        <Nombre_del_equipo>PC Xavineta</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No arrenca, simplement no arrenca.</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="11">
+        <Marca_de_temps>13/11/2025 8:56:11</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pinquan.lu.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>21/09</Fecha_de_la_incidencia>
+        <Hora>15:38:00</Hora>
+        <Nombre_del_equipo>superman</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>pantalla en blanco</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="12">
+        <Marca_de_temps>13/11/2025 8:56:54</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>mario@balastegui.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>05/05</Fecha_de_la_incidencia>
+        <Hora>0:00:00</Hora>
+        <Nombre_del_equipo>Motorola G15 512GB 12GB</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Teléfono móvil</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Carrer de la Mare de Déu de Montserrat, 17, 08922 Santa Coloma de Gramenet,
+            Barcelona
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="13">
+        <Marca_de_temps>13/11/2025 8:57:17</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>mario.cabeza.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/11</Fecha_de_la_incidencia>
+        <Hora>13:00:00</Hora>
+        <Nombre_del_equipo>Balastegui Computer NewGen</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Este ordenador es un timo, a parte de que se queda pillado no se le puede
+            cambiar el fondo de pantalla.
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="14">
+        <Marca_de_temps>13/11/2025 8:58:07</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>no@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/08</Fecha_de_la_incidencia>
+        <Hora>7:08:00</Hora>
+        <Nombre_del_equipo>no se</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>no se</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no me va</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="15">
+        <Marca_de_temps>13/11/2025 8:58:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>ashdika@jahsdk.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/01</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>Proyector</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Proyecta la imagen a la inversa</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="16">
+        <Marca_de_temps>13/11/2025 9:00:14</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>marc@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/12</Fecha_de_la_incidencia>
+        <Hora>9:15:00</Hora>
+        <Nombre_del_equipo>Adam Ben Mansor</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Observar a Adam Ben Mansor equivale a asistir a una epifanía estética de
+            índole casi ontoteogónica
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="17">
+        <Marca_de_temps>13/11/2025 9:01:18</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>alberto.martinez@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/10</Fecha_de_la_incidencia>
+        <Hora>12:12:00</Hora>
+        <Nombre_del_equipo>PC-1</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Hoy el ordenador va muy lento, he probado de reiniciar y nada sigue igual
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="18">
+        <Marca_de_temps>13/11/2025 9:02:46</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>no@tinc.cap</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/01</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>no@tinc.cap</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>no@tinc.cap</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no@tinc.cap</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="19">
+        <Marca_de_temps>13/11/2025 9:10:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>9:10:00</Hora>
+        <Nombre_del_equipo>WLD-33</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>PC</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>La pantalla no se ve</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="20">
+        <Marca_de_temps>13/11/2025 9:10:34</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>xasd.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>1:00:00</Hora>
+        <Nombre_del_equipo>
+            dsffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        </Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>rwerw</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>werrrrrrrrrrrrr</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="21">
+        <Marca_de_temps>13/11/2025 9:11:28</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>hmmmmmmmmmm@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/12</Fecha_de_la_incidencia>
+        <Hora>12:12:00</Hora>
+        <Nombre_del_equipo>2321</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>32423</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="22">
+        <Marca_de_temps>13/11/2025 9:11:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>alex.sampietro1@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/10</Fecha_de_la_incidencia>
+        <Hora>11:11:00</Hora>
+        <Nombre_del_equipo>G2</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No es conecta a la xarxa</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="23">
+        <Marca_de_temps>13/11/2025 9:11:44</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>25/12</Fecha_de_la_incidencia>
+        <Hora>13:33:00</Hora>
+        <Nombre_del_equipo>WLD-34</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No hay conexión a internet</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="24">
+        <Marca_de_temps>13/11/2025 9:11:59</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>rewrw@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>22/11</Fecha_de_la_incidencia>
+        <Hora>13:00:00</Hora>
+        <Nombre_del_equipo>htr</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>thr</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>trhrth</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="25">
+        <Marca_de_temps>13/11/2025 9:12:50</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>Hasbulla@hihitler.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/12</Fecha_de_la_incidencia>
+        <Hora>9:30:00</Hora>
+        <Nombre_del_equipo>Donald Duck limited edition</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>&quot;Listen up, you little people! I am Hasbulla. Donald trump is a fucking
+            idiot guy.
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="26">
+        <Marca_de_temps>13/11/2025 9:12:51</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>03/11</Fecha_de_la_incidencia>
+        <Hora>12:33:00</Hora>
+        <Nombre_del_equipo>WLD-35</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Tarda mucho en cargar cualquier cosa</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="27">
+        <Marca_de_temps>13/11/2025 9:13:46</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>MeLlamo@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>5:30:00</Hora>
+        <Nombre_del_equipo>mi ordenador</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>un ordenador</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>instale un simio morado y va muy lento</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="28">
+        <Marca_de_temps>13/11/2025 9:15:59</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>laia.coca.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>31/05</Fecha_de_la_incidencia>
+        <Hora>7:02:00</Hora>
+        <Nombre_del_equipo>Equipo pantalla</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Es una pantalla....</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No enciende?? creo no.... veo nada? ayuda
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="29">
+        <Marca_de_temps>13/11/2025 9:16:15</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>14/11</Fecha_de_la_incidencia>
+        <Hora>9:12:00</Hora>
+        <Nombre_del_equipo>WLD-36</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Va muy lento</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="30">
+        <Marca_de_temps>13/11/2025 9:17:31</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>miriam.marco.7e9@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/12</Fecha_de_la_incidencia>
+        <Hora>1:20:00</Hora>
+        <Nombre_del_equipo>hola</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>NO</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>hay un dinosaurio</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="31">
+        <Marca_de_temps>13/11/2025 9:17:38</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>23/12</Fecha_de_la_incidencia>
+        <Hora>13:33:00</Hora>
+        <Nombre_del_equipo>WLD-37</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>NO arranca</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="32">
+        <Marca_de_temps>13/11/2025 9:18:41</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>23/06</Fecha_de_la_incidencia>
+        <Hora>13:33:00</Hora>
+        <Nombre_del_equipo>WLD-39</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>La pantalla no se ve</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="33">
+        <Marca_de_temps>13/11/2025 9:19:22</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pinquanmailof@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/02</Fecha_de_la_incidencia>
+        <Hora>3:03:00</Hora>
+        <Nombre_del_equipo>rack</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>otros</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>mi ordenador no hace ping quan con el rak de clase
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="34">
+        <Marca_de_temps>13/11/2025 9:20:41</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>08/04</Fecha_de_la_incidencia>
+        <Hora>13:32:00</Hora>
+        <Nombre_del_equipo>WLD-38</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>el cable esta medio rot</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="35">
+        <Marca_de_temps>13/11/2025 9:20:43</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>aaaaaaaaaaaaaa@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>14/02</Fecha_de_la_incidencia>
+        <Hora>0:00:00</Hora>
+        <Nombre_del_equipo>micoondas</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>no funciona</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no calienta</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="36">
+        <Marca_de_temps>13/11/2025 9:20:43</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>sdfwfaew@gmsdf.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>21/12</Fecha_de_la_incidencia>
+        <Hora>11:00:00</Hora>
+        <Nombre_del_equipo>21321</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>2134214</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>werewr</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="37">
+        <Marca_de_temps>13/11/2025 9:21:17</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>rwerwer@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>11/11</Fecha_de_la_incidencia>
+        <Hora>2:00:00</Hora>
+        <Nombre_del_equipo>32121</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>gerge</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>erw</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="38">
+        <Marca_de_temps>13/11/2025 9:22:00</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>03/03</Fecha_de_la_incidencia>
+        <Hora>3:33:00</Hora>
+        <Nombre_del_equipo>WLD-40</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No arranca</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="39">
+        <Marca_de_temps>13/11/2025 9:22:03</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>subenqiuyuan@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>08/04</Fecha_de_la_incidencia>
+        <Hora>20:42:00</Hora>
+        <Nombre_del_equipo>spiderman</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el monitor</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="40">
+        <Marca_de_temps>13/11/2025 9:22:38</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>gmail.com@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>19/12</Fecha_de_la_incidencia>
+        <Hora>11:11:00</Hora>
+        <Nombre_del_equipo>wld-232</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>altavoces</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no sale audio</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="41">
+        <Marca_de_temps>13/11/2025 9:23:11</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pinquan1@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>31/08</Fecha_de_la_incidencia>
+        <Hora>7:45:00</Hora>
+        <Nombre_del_equipo>ironman</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el raton</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="42">
+        <Marca_de_temps>13/11/2025 9:23:26</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>04/04</Fecha_de_la_incidencia>
+        <Hora>4:04:00</Hora>
+        <Nombre_del_equipo>WLD-41</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>El altavoz no se escucha</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="43">
+        <Marca_de_temps>13/11/2025 9:23:28</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>manue@lamanita.relaja</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/11</Fecha_de_la_incidencia>
+        <Hora>12:23:00</Hora>
+        <Nombre_del_equipo>Ordenador Baena</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>el ordenador de Baena ha decidido tomarse unas vacaciones sin avisar.
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="44">
+        <Marca_de_temps>13/11/2025 9:23:36</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>itb@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>25/02</Fecha_de_la_incidencia>
+        <Hora>22:22:00</Hora>
+        <Nombre_del_equipo>Grupo 5</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>En caso de otros, pon que tipo de equipo es:
+        </En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>tnego muchos problemas mentales estoy puto loquisimo
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="45">
+        <Marca_de_temps>13/11/2025 9:23:46</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>chatgpt@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/12</Fecha_de_la_incidencia>
+        <Hora>21:21:00</Hora>
+        <Nombre_del_equipo>WLD-345</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No arranca</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="46">
+        <Marca_de_temps>13/11/2025 9:23:49</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>tu@correo.electronico</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/12</Fecha_de_la_incidencia>
+        <Hora>12:14:00</Hora>
+        <Nombre_del_equipo>nombre del equipo</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>pachanfga</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="47">
+        <Marca_de_temps>13/11/2025 9:23:53</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>rege@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>21/11</Fecha_de_la_incidencia>
+        <Hora>1:00:00</Hora>
+        <Nombre_del_equipo>trhhrt</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>rthr</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>hrthrh</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="48">
+        <Marca_de_temps>13/11/2025 9:24:13</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pinquan2@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>27/09</Fecha_de_la_incidencia>
+        <Hora>8:45:00</Hora>
+        <Nombre_del_equipo>reverse</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el teclado</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="49">
+        <Marca_de_temps>13/11/2025 9:24:23</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pol.guerrero.7e7@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>05/05</Fecha_de_la_incidencia>
+        <Hora>5:05:00</Hora>
+        <Nombre_del_equipo>WLD-42</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>el proyector no proyecta</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="50">
+        <Marca_de_temps>13/11/2025 9:24:59</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>Ingresado@telecos.org</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>13:11:00</Hora>
+        <Nombre_del_equipo>Real Betis Balompié</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Futbolístico</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No llegamos a puestos de europa</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="51">
+        <Marca_de_temps>13/11/2025 9:25:10</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>nightodysseia@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/04</Fecha_de_la_incidencia>
+        <Hora>20:56:00</Hora>
+        <Nombre_del_equipo>reverse1</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no hay internet</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="52">
+        <Marca_de_temps>13/11/2025 9:25:12</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>javichu@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>11/03</Fecha_de_la_incidencia>
+        <Hora>23:34:00</Hora>
+        <Nombre_del_equipo>wld-333</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no se ve nada</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="53">
+        <Marca_de_temps>13/11/2025 9:26:05</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>pinquan3@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>09/11</Fecha_de_la_incidencia>
+        <Hora>5:46:00</Hora>
+        <Nombre_del_equipo>reverse2</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el terminal</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="54">
+        <Marca_de_temps>13/11/2025 9:26:51</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>aaaaaalllll@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/02</Fecha_de_la_incidencia>
+        <Hora>3:04:00</Hora>
+        <Nombre_del_equipo>wld-564</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>El fortnite no pasa de los 15 fps</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="55">
+        <Marca_de_temps>13/11/2025 9:26:54</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>asdhiqhw@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/12</Fecha_de_la_incidencia>
+        <Hora>12:18:00</Hora>
+        <Nombre_del_equipo>reverse3</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona la carpeta compartida</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="56">
+        <Marca_de_temps>13/11/2025 9:27:51</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>ok@xn--maana-pta.aaa</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>11/11</Fecha_de_la_incidencia>
+        <Hora>11:11:00</Hora>
+        <Nombre_del_equipo>Ok mañana 💜</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Ok mañana 💜</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Ok mañana 💜</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="57">
+        <Marca_de_temps>13/11/2025 9:28:00</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>rayomcqueen@cars.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>03/03</Fecha_de_la_incidencia>
+        <Hora>5:05:00</Hora>
+        <Nombre_del_equipo>wld-333</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>El teclado</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Le faltan las teclas</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="58">
+        <Marca_de_temps>13/11/2025 9:28:08</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>dhaskdh@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/05</Fecha_de_la_incidencia>
+        <Hora>8:21:00</Hora>
+        <Nombre_del_equipo>asd2</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>pantalla en negro</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="59">
+        <Marca_de_temps>13/11/2025 9:28:58</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>asfafff@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/12</Fecha_de_la_incidencia>
+        <Hora>23:35:00</Hora>
+        <Nombre_del_equipo>asdw</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el chrome</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="60">
+        <Marca_de_temps>13/11/2025 9:29:34</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>asdadaw@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>05/10</Fecha_de_la_incidencia>
+        <Hora>7:25:00</Hora>
+        <Nombre_del_equipo>aswd</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el firefox</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="61">
+        <Marca_de_temps>13/11/2025 9:29:50</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>llados@fuck.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>04/11</Fecha_de_la_incidencia>
+        <Hora>11:11:00</Hora>
+        <Nombre_del_equipo>cafetera de la maquina expendedora</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Cafetera</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>La cafetera no da fucking cafe</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="62">
+        <Marca_de_temps>13/11/2025 9:30:34</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>caaww@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>08/02</Fecha_de_la_incidencia>
+        <Hora>19:45:00</Hora>
+        <Nombre_del_equipo>xssa</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el pycharm</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="63">
+        <Marca_de_temps>13/11/2025 9:31:13</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>bndrrs3e2@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/05</Fecha_de_la_incidencia>
+        <Hora>12:11:00</Hora>
+        <Nombre_del_equipo>dass</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el linux</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="64">
+        <Marca_de_temps>13/11/2025 9:31:22</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>lalsala@gaaa.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>31/12</Fecha_de_la_incidencia>
+        <Hora>23:59:00</Hora>
+        <Nombre_del_equipo>wld 456</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>La pantalla no se ve</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>La pantalla esta en blanco</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="65">
+        <Marca_de_temps>13/11/2025 9:32:27</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>fhyydh@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/08</Fecha_de_la_incidencia>
+        <Hora>4:04:00</Hora>
+        <Nombre_del_equipo>1222s</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el gmail</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="66">
+        <Marca_de_temps>13/11/2025 9:33:09</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>barcmalastegui@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>11/02</Fecha_de_la_incidencia>
+        <Hora>15:20:00</Hora>
+        <Nombre_del_equipo>Juan Alberto</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Cabezón</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Hago ping de una oreja a la otra y se pasa el TTL
+        </Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="67">
+        <Marca_de_temps>13/11/2025 9:33:12</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>fsdgdg@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>07/07</Fecha_de_la_incidencia>
+        <Hora>4:08:00</Hora>
+        <Nombre_del_equipo>asfas</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el chatgpt</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="68">
+        <Marca_de_temps>13/11/2025 9:33:52</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>as222cfc@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>05/05</Fecha_de_la_incidencia>
+        <Hora>5:45:00</Hora>
+        <Nombre_del_equipo>asasd</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el packet tracer</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="69">
+        <Marca_de_temps>13/11/2025 9:33:56</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>alexpesetero@figo.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>13:11:00</Hora>
+        <Nombre_del_equipo>Luig Figo RTX3090</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Un pesetero</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Alex traidor peseteroooooo</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="70">
+        <Marca_de_temps>13/11/2025 9:34:39</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>gthtyjntyjty@tfgfgve.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>11/12</Fecha_de_la_incidencia>
+        <Hora>1:11:00</Hora>
+        <Nombre_del_equipo>E32E32R3GT</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>21E12ER2</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>RR33333333</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="71">
+        <Marca_de_temps>13/11/2025 9:34:43</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>adsfdsfsd@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>12/12</Fecha_de_la_incidencia>
+        <Hora>1:15:00</Hora>
+        <Nombre_del_equipo>adsds</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el traductor</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="72">
+        <Marca_de_temps>13/11/2025 9:35:40</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>o@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/02</Fecha_de_la_incidencia>
+        <Hora>0:20:00</Hora>
+        <Nombre_del_equipo>Jose</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>mi tio</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>me ha robado</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="73">
+        <Marca_de_temps>13/11/2025 9:37:10</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>4sd5as4@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>01/12</Fecha_de_la_incidencia>
+        <Hora>22:22:00</Hora>
+        <Nombre_del_equipo>2132d</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el gemini</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Media</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="74">
+        <Marca_de_temps>13/11/2025 9:38:50</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>d2d22ds@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/04</Fecha_de_la_incidencia>
+        <Hora>4:04:00</Hora>
+        <Nombre_del_equipo>dsad</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el grok</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica>daw2e21e2@gmail.com</Adreça_electrònica>
+    </incidencia>
+    <incidencia id="75">
+        <Marca_de_temps>13/11/2025 9:39:37</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>12e21esad@gmail.com</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>02/02</Fecha_de_la_incidencia>
+        <Hora>1:01:00</Hora>
+        <Nombre_del_equipo>sada</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>Va muy lento</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no funciona el claude</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica>4drfg5rs@gmail.com</Adreça_electrònica>
+    </incidencia>
+    <incidencia id="76">
+        <Marca_de_temps>13/11/2025 9:40:09</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>ellajura@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>05/11</Fecha_de_la_incidencia>
+        <Hora>8:30:00</Hora>
+        <Nombre_del_equipo>ellajura-55</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula3</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>No hay red en el dispositivo</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="77">
+        <Marca_de_temps>13/11/2025 9:40:35</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>alexteaprieto@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>13/11</Fecha_de_la_incidencia>
+        <Hora>13:11:00</Hora>
+        <Nombre_del_equipo>SampietroTPL</Nombre_del_equipo>
+        <Tipo_de_equipo>Otros</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>Maquina monetaria</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>Otros</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>Traidor Pesetero</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="78">
+        <Marca_de_temps>13/11/2025 9:41:37</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>DFSEWFWEF@IT.CAT</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>31/07</Fecha_de_la_incidencia>
+        <Hora>2:02:00</Hora>
+        <Nombre_del_equipo>R3R</Nombre_del_equipo>
+        <Tipo_de_equipo>Audiovisual</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_>R3</En_caso_de_otros__pon_que_tipo_de_equipo_es_>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No hay red</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>R3</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="79">
+        <Marca_de_temps>13/11/2025 9:42:47</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>si@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>08/08</Fecha_de_la_incidencia>
+        <Hora>9:33:00</Hora>
+        <Nombre_del_equipo>lit-40</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula2</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no arranca</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Alta</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+    <incidencia id="80">
+        <Marca_de_temps>13/11/2025 9:44:29</Marca_de_temps>
+        <Ingresa__tu_correo_electrónico_>litlit@itb.cat</Ingresa__tu_correo_electrónico_>
+        <Fecha_de_la_incidencia>19/09</Fecha_de_la_incidencia>
+        <Hora>5:35:00</Hora>
+        <Nombre_del_equipo>va</Nombre_del_equipo>
+        <Tipo_de_equipo>Informático</Tipo_de_equipo>
+        <En_caso_de_otros__pon_que_tipo_de_equipo_es_/>
+        <Ubicación>Aula 1</Ubicación>
+        <Tipos_de_incidencia>No arranca</Tipos_de_incidencia>
+        <Explica_el_problema_detalladamente>no va</Explica_el_problema_detalladamente>
+        <Prioridad_del_problema>Baja</Prioridad_del_problema>
+        <Adreça_electrònica/>
+    </incidencia>
+</incidencies>
