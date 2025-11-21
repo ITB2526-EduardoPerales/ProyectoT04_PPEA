@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import getpass
 import hashlib
 import xml.etree.ElementTree as ET
@@ -10,9 +11,15 @@ from datetime import datetime
 init(autoreset=True)
 
 # =========================
+# Configuración de ficheros
+# =========================
+XML_FILE = "incidencies.xml"
+JSON_FILE = "incidencies.json"
+
+# =========================
 # Autenticación del creador
 # =========================
-CREATOR_USER = os.environ.get("CREATOR_USER", "admin")  # cambia si quieres
+CREATOR_USER = os.environ.get("CREATOR_USER", "admin")
 CREATOR_PASS_HASH = os.environ.get("CREATOR_PASS_HASH", "replace_with_your_sha256_hash")
 
 def verify_password(plain_password: str) -> bool:
@@ -64,6 +71,7 @@ def print_menu_main():
     print("3) Ver incidencias por ubicación")
     print("4) Ver estadísticas generales")
     print("5) Administrar (requiere clave)")
+    print("6) Exportar a JSON")
     print("0) Salir")
 
 def print_section_header(text):
@@ -71,9 +79,8 @@ def print_section_header(text):
     print_panel(text)
 
 # =========================
-# Cargar XML con manejo de errores (sin mostrar la ruta)
+# Cargar XML con manejo de errores (sin mostrar rutas)
 # =========================
-XML_FILE = "incidencies.xml"
 try:
     tree = ET.parse(XML_FILE)
     root = tree.getroot()
@@ -125,7 +132,7 @@ def parse_fecha_hora(fecha_str, hora_str):
 valides, descartades, sense_any = [], 0, 0
 ahora = datetime.now()
 for inc in incidencies:
-    dt = parse_fecha_hora(inc["fecha"], inc["hora"])
+    dt = parse_fecha_hora(inc.get("fecha"), inc.get("hora"))
     if dt is None:
         valides.append(inc)
         sense_any += 1
@@ -135,7 +142,7 @@ for inc in incidencies:
     else:
         descartades += 1
 
-valides.sort(key=lambda x: (prio_map.get((x["prioridad"] or "").lower(), 3), x.get("dt", datetime.max)))
+valides.sort(key=lambda x: (prio_map.get((x.get("prioridad") or "").lower(), 3), x.get("dt", datetime.max)))
 
 # =========================
 # Impresión de tabla (cabecera + filas)
@@ -216,7 +223,7 @@ def menu_por_campo(campo, titulo):
             valor = items[idx][0]
             mostrar_lista_filtrada_por(campo, valor)
         else:
-            print(Fore.RED + "Opción inválida." + Style.RESET_ALL)
+            print(Fore.RED + "Opción inválida" + Style.RESET_ALL)
     except ValueError:
         print(Fore.RED + "Debe ingresar un número válido." + Style.RESET_ALL)
 
@@ -249,19 +256,126 @@ def menu_estadisticas_generales():
         print(f"• {k:<24} {format_pct(pct)}  {bar(pct, 30)}  ({v})")
 
 # =========================
-# Operaciones administrativas (requiere autenticación)
+# Guardado seguro en XML
 # =========================
 def safe_tree_write(tree_obj, filename):
     try:
         tree_obj.write(filename, encoding="utf-8", xml_declaration=True)
         print(Fore.GREEN + f"Cambios guardados en {filename}" + Style.RESET_ALL)
-    except FileNotFoundError:
-        print(Fore.RED + f"No se pudo guardar: ruta no encontrada para '{filename}'." + Style.RESET_ALL)
     except PermissionError:
         print(Fore.RED + f"No se pudo guardar: permiso denegado para '{filename}'." + Style.RESET_ALL)
     except Exception as e:
         print(Fore.RED + f"Error al guardar '{filename}': {e}" + Style.RESET_ALL)
 
+# =========================
+# Serialización segura (datetime -> ISO)
+# =========================
+def _serialize_value(v):
+    if isinstance(v, datetime):
+        return v.isoformat()
+    return v
+
+def _serialize_incidencia(inc):
+    out = {}
+    for k, v in inc.items():
+        out[k] = _serialize_value(v)
+    return out
+
+# =========================
+# NUEVA funcionalidad: exportar/incorporar a JSON (robusta)
+# =========================
+def guardar_a_json(inc_list, filename=JSON_FILE):
+    """
+    - Si filename no existe: lo crea con todas las incidencias de inc_list.
+    - Si existe: pregunta si Sobreescribir o Añadir (sin duplicados por 'id').
+    - Evita perder elementos sin id y gestiona duplicados conservando existentes.
+    """
+    serial_list = [_serialize_incidencia(inc) for inc in inc_list]
+
+    if not os.path.exists(filename):
+        try:
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(serial_list, f, ensure_ascii=False, indent=2)
+            print(Fore.GREEN + f"Archivo '{filename}' creado con {len(serial_list)} incidencias." + Style.RESET_ALL)
+        except Exception as e:
+            print(Fore.RED + f"Error al escribir '{filename}': {e}" + Style.RESET_ALL)
+        return
+
+    # Si existe, preguntar acción
+    print_section_header(f"El archivo '{filename}' ya existe")
+    print("1) Sobreescribirlo (se borrará el contenido anterior)")
+    print("2) Añadir solo las nuevas incidencias (evita duplicados por ID)")
+    print("0) Cancelar")
+    choice = input("\nSeleccione una opción: ").strip()
+    if choice == "0":
+        print(Fore.YELLOW + "Operación cancelada." + Style.RESET_ALL)
+        return
+    if choice == "1":
+        try:
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(serial_list, f, ensure_ascii=False, indent=2)
+            print(Fore.GREEN + f"Archivo '{filename}' sobreescrito con {len(serial_list)} incidencias." + Style.RESET_ALL)
+        except Exception as e:
+            print(Fore.RED + f"Error al sobreescribir '{filename}': {e}" + Style.RESET_ALL)
+        return
+    if choice == "2":
+        try:
+            with open(filename, "r", encoding="utf-8") as f:
+                try:
+                    existing = json.load(f)
+                    if not isinstance(existing, list):
+                        print(Fore.RED + f"Formato inesperado en '{filename}'. Se espera una lista JSON." + Style.RESET_ALL)
+                        return
+                except json.JSONDecodeError:
+                    existing = []
+        except Exception as e:
+            print(Fore.RED + f"No se pudo leer '{filename}': {e}" + Style.RESET_ALL)
+            return
+
+        # Normalizar ids a cadenas; indexar existentes
+        existing_by_id = {}
+        no_id_counter = 0
+        for item in existing:
+            key = item.get("id")
+            if key is None or str(key).strip() == "":
+                no_id_counter += 1
+                key = f"_noid_existing_{no_id_counter}"
+            existing_by_id[str(key)] = item
+
+        # Añadir solo las nuevas incidencias, evitando duplicados por id
+        added = 0
+        skipped_duplicates = 0
+        added_noid = 0
+
+        for inc in serial_list:
+            raw_id = inc.get("id")
+            if raw_id is None or str(raw_id).strip() == "":
+                added_noid += 1
+                no_id_counter += 1
+                existing_by_id[f"_noid_new_{no_id_counter}"] = inc
+                added += 1
+            else:
+                inc_id = str(raw_id)
+                if inc_id in existing_by_id:
+                    skipped_duplicates += 1
+                else:
+                    existing_by_id[inc_id] = inc
+                    added += 1
+
+        merged = list(existing_by_id.values())
+        try:
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(merged, f, ensure_ascii=False, indent=2)
+            print(Fore.GREEN + f"Añadidas {added} incidencias nuevas a '{filename}'. (Duplicados omitidos: {skipped_duplicates}; sin-id añadidos: {added_noid}). Total ahora: {len(merged)}." + Style.RESET_ALL)
+        except Exception as e:
+            print(Fore.RED + f"Error al escribir '{filename}': {e}" + Style.RESET_ALL)
+        return
+
+    print(Fore.RED + "Opción inválida." + Style.RESET_ALL)
+
+# =========================
+# Operaciones administrativas (requiere autenticación)
+# =========================
 def admin_menu(valides):
     print_section_header("ADMINISTRAR (requiere clave)")
     print("1) Cambiar prioridad de una incidencia")
@@ -299,7 +413,7 @@ def admin_menu(valides):
         safe_tree_write(tree, XML_FILE)
 
 # =========================
-# Menú principal (estético, porcentajes resaltados)
+# Menú principal
 # =========================
 def mostrar_menu(valides):
     while True:
@@ -319,10 +433,12 @@ def mostrar_menu(valides):
             menu_estadisticas_generales()
         elif opcion == "5":
             admin_menu(valides)
+        elif opcion == "6":
+            guardar_a_json(valides, JSON_FILE)
         else:
             print(Fore.RED + "Opción inválida, intente de nuevo." + Style.RESET_ALL)
 
-# Ejecutar menú
+# Ejecutar
 if __name__ == "__main__":
     mostrar_menu(valides)
     print(Fore.MAGENTA + "\nProcess finished with exit code 0" + Style.RESET_ALL)
