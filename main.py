@@ -1,52 +1,115 @@
+import os
+import sys
+import getpass
+import hashlib
 import xml.etree.ElementTree as ET
 from collections import Counter
-from colorama import Fore, Style
+from colorama import Fore, Style, init
 from datetime import datetime
 
-# Función auxiliar para obtener texto seguro
+init(autoreset=True)
+
+# =========================
+# Autenticación del creador
+# =========================
+CREATOR_USER = os.environ.get("CREATOR_USER", "admin")  # cambia si quieres
+CREATOR_PASS_HASH = os.environ.get("CREATOR_PASS_HASH", "replace_with_your_sha256_hash")
+
+def verify_password(plain_password: str) -> bool:
+    return hashlib.sha256(plain_password.encode()).hexdigest() == CREATOR_PASS_HASH
+
+def require_creator() -> bool:
+    print(Fore.CYAN + "\nAutenticación requerida (solo creador)" + Style.RESET_ALL)
+    user = input("Usuario: ").strip()
+    passwd = getpass.getpass("Contraseña: ")
+    if user == CREATOR_USER and verify_password(passwd):
+        print(Fore.GREEN + "Autenticación correcta." + Style.RESET_ALL)
+        return True
+    print(Fore.RED + "Autenticación fallida." + Style.RESET_ALL)
+    return False
+
+# =========================
+# Utilidades de UI
+# =========================
 def txt(node, tag):
     child = node.find(tag)
     return (child.text or "").strip() if child is not None and child.text is not None else ""
 
-# Leer XML
-tree = ET.parse("incidencies.xml")
-root = tree.getroot()
+def pct_color(pct):
+    if pct >= 75:
+        return Fore.GREEN
+    elif pct >= 50:
+        return Fore.YELLOW
+    else:
+        return Fore.RED
 
-# Extraer incidencias (incluye todos los campos)
+def bar(pct, width=20):
+    filled = int((pct / 100) * width)
+    return f"{'█' * filled}{'░' * (width - filled)}"
+
+def format_pct(pct):
+    c = pct_color(pct)
+    return f"{c}{pct:3d}%{Style.RESET_ALL}"
+
+def print_panel(title):
+    line = "─" * (len(title) + 2)
+    print(Fore.CYAN + f"┌{line}┐" + Style.RESET_ALL)
+    print(Fore.CYAN + f"│ {title} │" + Style.RESET_ALL)
+    print(Fore.CYAN + f"└{line}┘" + Style.RESET_ALL)
+
+def print_menu_main():
+    print_panel("MENÚ PRINCIPAL")
+    print("1) Ver incidencias por tipo")
+    print("2) Ver incidencias por prioridad")
+    print("3) Ver incidencias por ubicación")
+    print("4) Ver estadísticas generales")
+    print("5) Administrar (requiere clave)")
+    print("0) Salir")
+
+def print_section_header(text):
+    print()
+    print_panel(text)
+
+# =========================
+# Cargar XML con manejo de errores (sin mostrar la ruta)
+# =========================
+XML_FILE = "incidencies.xml"
+try:
+    tree = ET.parse(XML_FILE)
+    root = tree.getroot()
+except FileNotFoundError:
+    print(Fore.RED + f"Error: no se encontró el archivo '{XML_FILE}'. Asegúrate de que existe en el directorio actual." + Style.RESET_ALL)
+    sys.exit(1)
+except ET.ParseError as e:
+    print(Fore.RED + f"Error al parsear '{XML_FILE}': {e}" + Style.RESET_ALL)
+    sys.exit(1)
+
+# =========================
+# Extraer incidencias
+# =========================
 incidencies = []
 for inc in root.findall("incidencia"):
     id_incidencia = inc.attrib.get("id", "")
-    marca = txt(inc, "Marca_de_temps")
-    correo = txt(inc, "Ingresa__tu_correo_electrónico_")
-    fecha = txt(inc, "Fecha_de_la_incidencia")
-    hora = txt(inc, "Hora")
-    nombre_equipo = txt(inc, "Nombre_del_equipo")
-    tipo_equipo = txt(inc, "Tipo_de_equipo")
-    tipo_otros = txt(inc, "En_caso_de_otros__pon_que_tipo_de_equipo_es_")
-    tipo = txt(inc, "Tipos_de_incidencia")
-    detalle = txt(inc, "Explica_el_problema_detalladamente")
-    prioridad = txt(inc, "Prioridad_del_problema")
-    ubicacion = txt(inc, "Ubicación")
-
     incidencies.append({
         "id": id_incidencia,
-        "marca": marca,
-        "correo": correo,
-        "fecha": fecha,
-        "hora": hora,
-        "nombre_equipo": nombre_equipo,
-        "tipo_equipo": tipo_equipo,
-        "tipo_otros": tipo_otros,
-        "tipo": tipo,
-        "detalle": detalle,
-        "prioridad": prioridad,
-        "ubicacion": ubicacion
+        "marca": txt(inc, "Marca_de_temps"),
+        "correo": txt(inc, "Ingresa__tu_correo_electrónico_"),
+        "fecha": txt(inc, "Fecha_de_la_incidencia"),
+        "hora": txt(inc, "Hora"),
+        "nombre_equipo": txt(inc, "Nombre_del_equipo"),
+        "tipo_equipo": txt(inc, "Tipo_de_equipo"),
+        "tipo_otros": txt(inc, "En_caso_de_otros__pon_que_tipo_de_equipo_es_"),
+        "tipo": txt(inc, "Tipos_de_incidencia"),
+        "detalle": txt(inc, "Explica_el_problema_detalladamente"),
+        "prioridad": txt(inc, "Prioridad_del_problema"),
+        "ubicacion": txt(inc, "Ubicación")
     })
 
-# Mapa de prioridad
+# =========================
+# Orden y filtrado
+# =========================
 prio_map = {"alta": 0, "media": 1, "baja": 2}
 
-# Parse fecha/hora
 def parse_fecha_hora(fecha_str, hora_str):
     fecha_str = (fecha_str or "").strip()
     hora_str = (hora_str or "").strip()
@@ -59,10 +122,8 @@ def parse_fecha_hora(fecha_str, hora_str):
         except Exception:
             return None
 
-# Filtrar incidencias válidas (descartar futuras)
 valides, descartades, sense_any = [], 0, 0
 ahora = datetime.now()
-
 for inc in incidencies:
     dt = parse_fecha_hora(inc["fecha"], inc["hora"])
     if dt is None:
@@ -74,10 +135,11 @@ for inc in incidencies:
     else:
         descartades += 1
 
-# Ordenar por prioridad y fecha/hora
 valides.sort(key=lambda x: (prio_map.get((x["prioridad"] or "").lower(), 3), x.get("dt", datetime.max)))
 
-# Función que imprime la cabecera fija (mismas columnas siempre)
+# =========================
+# Impresión de tabla (cabecera + filas)
+# =========================
 def imprimir_cabecera_compacta():
     header = (
         "ID   | Marca_de_temps         | Fecha         | Hora     | "
@@ -87,7 +149,6 @@ def imprimir_cabecera_compacta():
     print(Fore.CYAN + header + Style.RESET_ALL)
     print(Fore.CYAN + "-" * len(header) + Style.RESET_ALL)
 
-# Función que imprime una incidencia en la misma línea y columnas (sin modificar datos)
 def imprimir_linea_incidencia(inc):
     prio = (inc.get("prioridad") or "").lower()
     if "alta" in prio:
@@ -97,8 +158,6 @@ def imprimir_linea_incidencia(inc):
     else:
         color = Fore.GREEN
 
-    # Imprimimos todos los campos en el mismo orden que la cabecera, sin recortarlos
-    # Ajustes de formato solo para alinear; los valores completos se muestran (no se modifican los dicts)
     line = (
         f"{inc.get('id',''):4} | "
         f"{inc.get('marca',''):22} | "
@@ -114,126 +173,156 @@ def imprimir_linea_incidencia(inc):
     )
     print(color + line + Style.RESET_ALL)
 
-# Mostrar lista principal con la cabecera fija y todas las columnas
-print()
-print(Fore.CYAN + "📋 Incidencias válidas ordenadas por prioridad y fecha/hora:" + Style.RESET_ALL)
-imprimir_cabecera_compacta()
-for inc in valides:
-    imprimir_linea_incidencia(inc)
+# =========================
+# Módulos de menú con porcentajes destacados
+# =========================
+def stats_counter(campo):
+    total = len(valides)
+    c = Counter([inc.get(campo) or f"(sin {campo})" for inc in valides])
+    items = []
+    for k, v in sorted(c.items(), key=lambda kv: kv[1], reverse=True):
+        pct = int(v / max(1, total) * 100)
+        items.append((k, v, pct))
+    return items, total
 
-# Estadísticas generales
-total = len(valides) + descartades
-if total == 0:
-    total = 1
+def mostrar_lista_filtrada_por(campo, valor):
+    seleccionadas = [inc for inc in valides if (inc.get(campo) or f"(sin {campo})") == valor]
+    print_section_header(f"Resultados: {campo} = {valor}")
+    imprimir_cabecera_compacta()
+    for inc in seleccionadas:
+        imprimir_linea_incidencia(inc)
+    print()
 
-print(Fore.MAGENTA + "\n===== Estadísticas =====" + Style.RESET_ALL)
-print(f"Descartades (futuras): {int(descartades/total*100)}% ({descartades})")
-print(f"Sense any: {int(sense_any/total*100)}% ({sense_any})")
-print(f"Total vàlides: {int(len(valides)/total*100)}% ({len(valides)})")
+def menu_por_campo(campo, titulo):
+    items, total = stats_counter(campo)
+    print_section_header(titulo)
+    print(f"Total registros: {total}")
+    print(Fore.CYAN + "Seleccione una opción:" + Style.RESET_ALL)
+    for i, (k, v, pct) in enumerate(items, start=1):
+        print(
+            f"{i}) {k:<24} "
+            f"| {format_pct(pct)} "
+            f"| {bar(pct, width=25)} "
+            f"| {v} items"
+        )
+    print("0) Volver")
 
-# Contadores
-tipus_counter = Counter([inc.get("tipo") or "(sense tipus)" for inc in valides])
-print(Fore.CYAN + "\n📊 Per tipus:" + Style.RESET_ALL)
-for k, v in tipus_counter.items():
-    pct = int(v / max(1, len(valides)) * 100)
-    print(f"  {k:30} {pct}% ({v})")
+    sel = input("\nOpción: ").strip()
+    if sel == "0":
+        return
+    try:
+        idx = int(sel) - 1
+        if 0 <= idx < len(items):
+            valor = items[idx][0]
+            mostrar_lista_filtrada_por(campo, valor)
+        else:
+            print(Fore.RED + "Opción inválida." + Style.RESET_ALL)
+    except ValueError:
+        print(Fore.RED + "Debe ingresar un número válido." + Style.RESET_ALL)
 
-prio_counter = Counter([inc.get("prioridad") or "(sense prio)" for inc in valides])
-print(Fore.YELLOW + "\n🎯 Per prioritat:" + Style.RESET_ALL)
-for k, v in prio_counter.items():
-    pct = int(v / max(1, len(valides)) * 100)
-    print(f"  {k:30} {pct}% ({v})")
+def menu_estadisticas_generales():
+    print_section_header("Estadísticas generales")
+    total = len(valides) + descartades
+    total = total if total > 0 else 1
 
-ubi_counter = Counter([inc.get("ubicacion") or "(sense ubicació)" for inc in valides])
-print(Fore.GREEN + "\n📍 Per ubicació:" + Style.RESET_ALL)
-for k, v in ubi_counter.items():
-    pct = int(v / max(1, len(valides)) * 100)
-    print(f"  {k:30} {pct}% ({v})")
+    pct_desc = int(descartades/total*100)
+    pct_any = int(sense_any/total*100)
+    pct_valid = int(len(valides)/total*100)
+    print(Fore.MAGENTA + "Distribución temporal" + Style.RESET_ALL)
+    print(f"- Descartadas (futuras): {format_pct(pct_desc)} | {bar(pct_desc)} | {descartades}")
+    print(f"- Sin fecha/hora (sense any): {format_pct(pct_any)} | {bar(pct_any)} | {sense_any}")
+    print(f"- Válidas: {format_pct(pct_valid)} | {bar(pct_valid)} | {len(valides)}")
+
+    print(Fore.CYAN + "\nPor tipo" + Style.RESET_ALL)
+    items, _ = stats_counter("tipo")
+    for k, v, pct in items:
+        print(f"• {k:<24} {format_pct(pct)}  {bar(pct, 30)}  ({v})")
+
+    print(Fore.YELLOW + "\nPor prioridad" + Style.RESET_ALL)
+    items, _ = stats_counter("prioridad")
+    for k, v, pct in items:
+        print(f"• {k:<24} {format_pct(pct)}  {bar(pct, 30)}  ({v})")
+
+    print(Fore.GREEN + "\nPor ubicación" + Style.RESET_ALL)
+    items, _ = stats_counter("ubicacion")
+    for k, v, pct in items:
+        print(f"• {k:<24} {format_pct(pct)}  {bar(pct, 30)}  ({v})")
 
 # =========================
-# Menú interactivo — filtra pero NO quita columnas ni modifica datos
+# Operaciones administrativas (requiere autenticación)
+# =========================
+def safe_tree_write(tree_obj, filename):
+    try:
+        tree_obj.write(filename, encoding="utf-8", xml_declaration=True)
+        print(Fore.GREEN + f"Cambios guardados en {filename}" + Style.RESET_ALL)
+    except FileNotFoundError:
+        print(Fore.RED + f"No se pudo guardar: ruta no encontrada para '{filename}'." + Style.RESET_ALL)
+    except PermissionError:
+        print(Fore.RED + f"No se pudo guardar: permiso denegado para '{filename}'." + Style.RESET_ALL)
+    except Exception as e:
+        print(Fore.RED + f"Error al guardar '{filename}': {e}" + Style.RESET_ALL)
+
+def admin_menu(valides):
+    print_section_header("ADMINISTRAR (requiere clave)")
+    print("1) Cambiar prioridad de una incidencia")
+    print("2) Cambiar tipo de una incidencia")
+    print("0) Volver")
+    op = input("\nSeleccione: ").strip()
+    if op == "0":
+        return
+    if not require_creator():
+        return
+    if op in {"1", "2"}:
+        id_sel = input("ID de la incidencia: ").strip()
+        incs = [i for i in valides if i.get("id") == id_sel]
+        if not incs:
+            print(Fore.RED + "ID no encontrado." + Style.RESET_ALL)
+            return
+        nodo = next((n for n in root.findall("incidencia") if n.attrib.get("id") == id_sel), None)
+        if nodo is None:
+            print(Fore.RED + "Nodo XML no encontrado." + Style.RESET_ALL)
+            return
+        if op == "1":
+            nueva = input("Nueva prioridad (Alta/Media/Baja): ").strip()
+            incs[0]["prioridad"] = nueva
+            prio_node = nodo.find("Prioridad_del_problema")
+            if prio_node is None:
+                prio_node = ET.SubElement(nodo, "Prioridad_del_problema")
+            prio_node.text = nueva
+        elif op == "2":
+            nuevo_tipo = input("Nuevo tipo de incidencia: ").strip()
+            incs[0]["tipo"] = nuevo_tipo
+            tipo_node = nodo.find("Tipos_de_incidencia")
+            if tipo_node is None:
+                tipo_node = ET.SubElement(nodo, "Tipos_de_incidencia")
+            tipo_node.text = nuevo_tipo
+        safe_tree_write(tree, XML_FILE)
+
+# =========================
+# Menú principal (estético, porcentajes resaltados)
 # =========================
 def mostrar_menu(valides):
-    tipos = sorted(set([inc.get("tipo") or "(sense tipus)" for inc in valides]))
-    prioridades = ["Alta", "Media", "Baja"]
-
     while True:
-        print(Fore.CYAN + "\n===== MENÚ PRINCIPAL =====" + Style.RESET_ALL)
-        print("1. Ver incidencias por tipo")
-        print("2. Ver incidencias por prioridad")
-        print("3. Ver incidencia por ID")
-        print("0. Salir")
-
+        print_menu_main()
         opcion = input("\nSeleccione una opción: ").strip()
 
         if opcion == "0":
             print(Fore.MAGENTA + "Saliendo del menú..." + Style.RESET_ALL)
             break
-
         elif opcion == "1":
-            print(Fore.CYAN + "\n===== TIPOS DE INCIDENCIA =====" + Style.RESET_ALL)
-            for i, t in enumerate(tipos, start=1):
-                count = sum(1 for inc in valides if (inc.get("tipo") or "(sense tipus)") == t)
-                pct = int(count / max(1, len(valides)) * 100)
-                print(f"{i}. {t} {pct}% ({count})")
-            print("0. Volver")
-
-            subop = input("\nSeleccione un tipo: ").strip()
-            if subop == "0":
-                continue
-            try:
-                idx = int(subop) - 1
-                if 0 <= idx < len(tipos):
-                    tipo_sel = tipos[idx]
-                    seleccionadas = [inc for inc in valides if (inc.get("tipo") or "(sense tipus)") == tipo_sel]
-                    print(Fore.YELLOW + f"\n📋 Incidencias del tipo: {tipo_sel} ({len(seleccionadas)})" + Style.RESET_ALL)
-                    imprimir_cabecera_compacta()
-                    for inc in seleccionadas:
-                        imprimir_linea_incidencia(inc)
-                else:
-                    print(Fore.RED + "Opción inválida." + Style.RESET_ALL)
-            except ValueError:
-                print(Fore.RED + "Debe ingresar un número válido." + Style.RESET_ALL)
-
+            menu_por_campo("tipo", "Incidencias por tipo")
         elif opcion == "2":
-            print(Fore.CYAN + "\n===== PRIORIDADES =====" + Style.RESET_ALL)
-            for i, p in enumerate(prioridades, start=1):
-                count = sum(1 for inc in valides if (inc.get("prioridad") or "").lower() == p.lower())
-                pct = int(count / max(1, len(valides)) * 100)
-                print(f"{i}. {p} {pct}% ({count})")
-            print("0. Volver")
-
-            subop = input("\nSeleccione una prioridad: ").strip()
-            if subop == "0":
-                continue
-            try:
-                idx = int(subop) - 1
-                if 0 <= idx < len(prioridades):
-                    p_sel = prioridades[idx].lower()
-                    seleccionadas = [inc for inc in valides if (inc.get("prioridad") or "").lower() == p_sel]
-                    print(Fore.YELLOW + f"\n📋 Incidencias con prioridad: {prioridades[idx]} ({len(seleccionadas)})" + Style.RESET_ALL)
-                    imprimir_cabecera_compacta()
-                    for inc in seleccionadas:
-                        imprimir_linea_incidencia(inc)
-                else:
-                    print(Fore.RED + "Opción inválida." + Style.RESET_ALL)
-            except ValueError:
-                print(Fore.RED + "Debe ingresar un número válido." + Style.RESET_ALL)
-
+            menu_por_campo("prioridad", "Incidencias por prioridad")
         elif opcion == "3":
-            id_buscar = input("\nIntroduzca ID de la incidencia: ").strip()
-            encontradas = [inc for inc in valides if inc.get("id") == id_buscar]
-            if not encontradas:
-                print(Fore.RED + f"No se encontró incidencia con ID {id_buscar}" + Style.RESET_ALL)
-            else:
-                imprimir_cabecera_compacta()
-                for inc in encontradas:
-                    imprimir_linea_incidencia(inc)
-
+            menu_por_campo("ubicacion", "Incidencias por ubicación")
+        elif opcion == "4":
+            menu_estadisticas_generales()
+        elif opcion == "5":
+            admin_menu(valides)
         else:
             print(Fore.RED + "Opción inválida, intente de nuevo." + Style.RESET_ALL)
 
 # Ejecutar menú
-mostrar_menu(valides)
-
-print(Fore.MAGENTA + "\nProcess finished with exit code 0" + Style.RESET_ALL)
+if __name__ == "__main__":
+    mostrar_menu(valides)
+    print(Fore.MAGENTA + "\nProcess finished with exit code 0" + Style.RESET_ALL)
