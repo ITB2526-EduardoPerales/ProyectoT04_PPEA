@@ -326,3 +326,4 @@ def mostrar_menu(valides):
 if __name__ == "__main__":
     mostrar_menu(valides)
     print(Fore.MAGENTA + "\nProcess finished with exit code 0" + Style.RESET_ALL)
+#
